@@ -1,9 +1,13 @@
-<div *ngFor="let category of categories">
-  <div class="card border-dark mb-3 max-width">
-    <div class="card-header">{{category.id}}</div>
-    <div class="card-body text-dark">
-      <h5 class="card-title">{{category.title}}</h5>
-      <p class="card-text">{{category.description}}</p>
+<div class="col">
+  <div class="row">
+    <div *ngFor="let category of categories" class="col-6 row justify-content-around center">
+      <div class="card border-dark mb-3 max-width">
+        <div class="card-header">{{category.id}}</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">{{category.title}}</h5>
+          <p class="card-text">{{category.description}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
