@@ -10,7 +10,7 @@ import {HttpErrorResponse} from "@angular/common/http";
 })
 export class CategoryPageComponent implements OnInit {
   categories: Category[] = [];
-
+  //Fixed on other branch
   // constructor(private categoryService: CategoryService) {
   // }
 
