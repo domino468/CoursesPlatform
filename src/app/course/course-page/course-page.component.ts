@@ -20,7 +20,7 @@ export class CoursePageComponent implements OnInit {
         this.courses = response;
       },
       (error: HttpErrorResponse) => {
-        alert(error.message);
+        alert(error.message)
       }
     );
   }
