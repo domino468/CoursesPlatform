@@ -10,23 +10,23 @@ import {HttpErrorResponse} from "@angular/common/http";
 })
 export class CategoryPageComponent implements OnInit {
   categories: Category[] = [];
+  //Fixed on other branch
+  // constructor(private categoryService: CategoryService) {
+  // }
 
-  constructor(private categoryService: CategoryService) {
-  }
-
-  public getCategories(): void {
-    this.categoryService.getCategories().subscribe(
-      (response: Category[]) => {
-        this.categories = response;
-      },
-      (error: HttpErrorResponse) => {
-        alert(error.message)
-      }
-    );
-  }
+  // public getCategories(): void {
+  //   this.categoryService.getCategories().subscribe(
+  //     (response: Category[]) => {
+  //       this.categories = response;
+  //     },
+  //     (error: HttpErrorResponse) => {
+  //       alert(error.message)
+  //     }
+  //   );
+  // }
 
   ngOnInit(): void {
-    this.getCategories();
+    // this.getCategories();
   }
 
 }
