@@ -7,7 +7,7 @@ import { CategoryPageComponent } from './category/category-page/category-page.co
 import { CoursePageComponent } from './course/course-page/course-page.component';
 import {HttpClient} from "@angular/common/http";
 import {CourseService} from "./course/services/course.service";
-import {CategoryService} from "./category/category.service";
+import {CategoryService} from "./category/services/category.service";
 
 @NgModule({
   declarations: [
