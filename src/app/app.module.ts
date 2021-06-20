@@ -6,9 +6,11 @@ import {CategoryPageComponent} from './category/category-page/category-page.comp
 import {HeaderComponent} from './header/header.component';
 import {AppRoutingModule} from './app-routing.module';
 import {CoursePageComponent} from './course/course-page/course-page.component';
+import {LecturePageComponent} from "./lecture/lecture-page/lecture-page.component";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {CourseService} from "./course/services/course.service";
 import {CategoryService} from "./category/services/category.service";
+import {LectureService} from "./lecture/services/lecture.service";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import {CategoryService} from "./category/services/category.service";
     LandingPageComponent,
     CategoryPageComponent,
     HeaderComponent,
-    CoursePageComponent
+    CoursePageComponent,
+    LecturePageComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import {CategoryService} from "./category/services/category.service";
   providers: [
     HttpClient,
     CourseService,
-    CategoryService
+    CategoryService,
+    LectureService,
   ],
   bootstrap: [AppComponent]
 })
