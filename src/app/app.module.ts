@@ -11,7 +11,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {CourseService} from "./course/services/course.service";
 import {CategoryService} from "./category/services/category.service";
 import {LectureService} from "./lecture/services/lecture.service";
-import {ReactiveFormsModule} from "@angular/forms";
+import { SummaryPageComponent } from './summary-page/summary-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     CategoryPageComponent,
     HeaderComponent,
     CoursePageComponent,
-    LecturePageComponent
+    LecturePageComponent,
+    SummaryPageComponent
   ],
   imports: [
     BrowserModule,
