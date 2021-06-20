@@ -11,14 +11,48 @@
   font-family:"Lucida Handwriting", monospace;
   padding-top: 7%;
 }
-.card{
-  border:1px solid lightgray;
-  border-radius:25px;
+
+.card {
+  border: 1px solid lightgray;
+  border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.774);
 }
-.card-text{
+
+.card-text {
   text-align: justify;
 }
-.box{
-  margin:3% 5% 0% 5%;
+
+.box {
+  margin: 3% 5% 0 5%;
 }
+
+.emailContainer {
+  background-color: whitesmoke;
+  padding: 0.2rem 0 0.2rem 0;
+}
+
+.emailForm {
+  text-align: right;
+}
+
+.buttonHeight {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  height: 2.25rem;
+  width: 5rem;
+  border-radius: 3px;
+}
+
+.emailLabel {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.emailInput {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  height: 2.25rem;
+  font-size: 1.1rem;
+}
+

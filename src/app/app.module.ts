@@ -11,6 +11,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {CourseService} from "./course/services/course.service";
 import {CategoryService} from "./category/services/category.service";
 import {LectureService} from "./lecture/services/lecture.service";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {LectureService} from "./lecture/services/lecture.service";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [
     HttpClient,
