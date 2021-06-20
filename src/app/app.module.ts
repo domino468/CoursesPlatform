@@ -27,6 +27,7 @@ import { SummaryPageComponent } from './summary-page/summary-page.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [
     HttpClient,

@@ -9,3 +9,13 @@
     </div>
   </div>
 </div>
+<div class="emailContainer">
+  <div class="emailForm">
+    <label class="emailLabel" for="email">Email: </label>
+    <input [formControl]="email" [placeholder]="'example@email.com'" class="emailInput" id="email" type="email">
+    <button class="btn-primary buttonHeight" type="button">Submit</button>
+    <small *ngIf="email.touched && email.errors?.required" class="text-danger">Email is required</small>
+    <small *ngIf="email.errors?.pattern" class="text-danger">Email is invalid</small>
+  </div>
+</div>
+
