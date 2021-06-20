@@ -16,21 +16,21 @@
     text-align: center;
     margin-top:30%;
 }
-.image1{
+.leftImage{
     width: 40%;
     float:left;
     border-radius:50px;
     margin-right:3%;
 }
-.strong1{
-    size: 500px;
+.strongerText{
+    size: 31,25rem;
     text-align: right;
 }
-.content1{
+.letterContent{
     letter-spacing: 1.5px;
     
 }
-.image2{
+.imageRight{
     width: 40%;
     float:right;
     border-radius:50px;
@@ -42,13 +42,13 @@
     border-radius:50px;
     margin-right:3%;
 }
-.smallImage1{
+.smallerImage{
     width: 40%;
     float:right;
     border-radius:50px;
     margin-right:3%;
 }
-.smallImage2{
+.theSmallestImage{
     width: 35%;
     float:left;
     border-radius:50px;
