@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CategoryService} from "../services/category.service";
 import {Category} from "../models/category";
 import {HttpErrorResponse} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-category-page',
@@ -11,7 +12,7 @@ import {HttpErrorResponse} from "@angular/common/http";
 export class CategoryPageComponent implements OnInit {
   categories: Category[] = [];
 
-  constructor(private categoryService: CategoryService) {
+  constructor(private categoryService: CategoryService, private router: Router) {
   }
 
   public getCategories(): void {
@@ -23,6 +24,10 @@ export class CategoryPageComponent implements OnInit {
         alert(error.message)
       }
     );
+  }
+
+  goToCourses(): void {
+    this.router.navigate([`./course-page`])
   }
 
 
