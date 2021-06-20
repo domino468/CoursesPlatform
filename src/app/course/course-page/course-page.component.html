@@ -2,8 +2,8 @@
   <div *ngFor="let course of courses">
     <div class="card border-dark mb-3 max width margin">
       <div class="card-body text-dark">
-        <h4 (click)="goToLectures()" class="card-title">{{ course.title }}</h4>
-        <p class="card-text">{{ course.description }}</p>
+        <h4 class="card-title" (click)="goToLectures()" ><i>{{ course.title }}</i></h4>
+        <p class="card-text"><i>{{ course.description }}</i></p>
       </div>
     </div>
   </div>

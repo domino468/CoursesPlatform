@@ -1,22 +1,8 @@
-<!--<div class="col">
-  <div class="row">
-    <div *ngFor="let category of categories" class="col-6 row justify-content-around center">
-      <div class="card border-dark mb-3 max-width ">
-        <div class="card-header"><h4>{{category.title}}</h4></div>
-        <div class="card-body text-dark">
-          <p class="card-text">{{category.description}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
-
 <div class="col">
   <div class="row">
     <div *ngFor="let category of categories" class="col-4 row justify-content-around center">
-
       <div class="card border-dark mb-3 max-width" >
-        <div (click)="goToCourses()" class="card-header2"><h2><b>{{category.title}} </b></h2></div>
+        <div class="card-header2" (click)="goToCourses()"><h2><b><i>{{category.title}}</i></b></h2></div>
         <div class="card-body text-dark">
           <p class="card-text"><i>{{category.description}}</i></p>
         </div>
