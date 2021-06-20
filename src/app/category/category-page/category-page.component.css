@@ -6,4 +6,18 @@
   margin-top: 30px;
 }
 
+.card-header2{
+  text-align: center;
+  font-family:"Lucida Handwriting", monospace;
+  padding-top: 7%;
+}
+.card{
+  border:1px solid lightgray;
+  border-radius:25px;
+  background-color: rgba(255, 255, 255, 0.774);
+}
+.card-text{
+  text-align: justify;
+}
+
 
