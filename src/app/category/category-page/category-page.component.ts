@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CategoryService} from "../services/category.service";
 import {Category} from "../models/category";
 import {HttpErrorResponse} from "@angular/common/http";
-import {Router} from "@angular/router";
+import { Router} from "@angular/router";
 
 @Component({
   selector: 'app-category-page',
@@ -26,13 +26,11 @@ export class CategoryPageComponent implements OnInit {
     );
   }
 
-  goToCourses(): void {
-    this.router.navigate([`./course-page`])
+  onCategorySelect(categoryTitle: string) {
+    this.router.navigate([`./course-page/${categoryTitle}`])
   }
-
 
   ngOnInit(): void {
     this.getCategories();
   }
-
 }

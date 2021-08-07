@@ -22,7 +22,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     HeaderComponent,
     CoursePageComponent,
     LecturePageComponent,
-    SummaryPageComponent
+    SummaryPageComponent,
   ],
   imports: [
     BrowserModule,

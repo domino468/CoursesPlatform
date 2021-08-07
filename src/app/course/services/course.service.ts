@@ -12,7 +12,7 @@ export class CourseService {
 
   constructor(private http:HttpClient) { }
 
-  public getCourses(): Observable<Course[]> {
-    return this.http.get<Course[]>(`${this.apiServerUrl}/course/all`)
+  public getCoursesOfCategory(categoryTitle:string):Observable<Course[]>{
+    return this.http.get<Course[]>(`${this.apiServerUrl}/category/courses/${categoryTitle}`)
   }
 }
