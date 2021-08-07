@@ -14,13 +14,14 @@ export class CoursePageComponent implements OnInit, OnDestroy {
   courses: Course[] = [];
   private sub: Subscription | undefined;
 
-  constructor(private courseService: CourseService,
-              private router: Router,
-              private activatedRoute: ActivatedRoute) {
+  constructor(
+    private courseService: CourseService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute) {
   }
 
-  goToLectures(): void {
-    this.router.navigate([`./lecture-page`])
+  onCourseSelect(courseTitle: string): void {
+    this.router.navigate([`./lecture-page/${courseTitle}`])
   }
 
   ngOnInit(): void {

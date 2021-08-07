@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: "landing-page", component: LandingPageComponent},
   {path: "category-page", component: CategoryPageComponent},
   {path: "course-page/:title", component: CoursePageComponent},
-  {path: "lecture-page", component: LecturePageComponent},
+  {path: "lecture-page/:title", component: LecturePageComponent},
   {path: "summary-page", component: SummaryPageComponent},
   {path: '', redirectTo: '/landing-page', pathMatch: 'full'},
   {path: '**', component: LandingPageComponent}
