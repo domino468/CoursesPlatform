@@ -1,25 +1,22 @@
 #container{
     width:100%;
     padding:2%;
-    color: rgb(60,60,60);
-    background-color: rgba(255, 255, 255, 0.674);
+    color: black;
+    background-color: rgba(255, 255, 255, 0.15);
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
-    border-radius: 50px;
-    
 }
 #content{
     float:left;
 }
 #footer{
     clear:both;
-    text-align: center;
+    text-align: right;
     margin-top:30%;
 }
 .leftImage{
     width: 40%;
     float:left;
-    border-radius:50px;
     margin-right:3%;
 }
 .strongerText{
@@ -57,3 +54,8 @@
 .content{
     float:left;
 }
+.content1{
+    text-align:center;
+    margin: 8%;
+}
+
