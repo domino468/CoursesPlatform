@@ -13,6 +13,7 @@ import {CategoryService} from "./category/services/category.service";
 import {LectureService} from "./lecture/services/lecture.service";
 import {SummaryPageComponent} from './summary-page/summary-page.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -22,13 +23,14 @@ import {ReactiveFormsModule} from "@angular/forms";
     HeaderComponent,
     CoursePageComponent,
     LecturePageComponent,
-    SummaryPageComponent
+    SummaryPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    RouterModule
   ],
   providers: [
     HttpClient,
