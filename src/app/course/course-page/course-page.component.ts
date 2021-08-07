@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Course} from "../models/course";
 import {CourseService} from "../services/course.service";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";
 import {Subscription} from "rxjs";
 import {switchMap, tap} from "rxjs/operators";
 
@@ -15,13 +15,7 @@ export class CoursePageComponent implements OnInit, OnDestroy {
   private sub: Subscription | undefined;
 
   constructor(
-    private courseService: CourseService,
-    private router: Router,
-    private activatedRoute: ActivatedRoute) {
-  }
-
-  onCourseSelect(courseTitle: string): void {
-    this.router.navigate([`./lecture-page/${courseTitle}`])
+    private courseService: CourseService, private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
