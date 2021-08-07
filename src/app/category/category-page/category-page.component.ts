@@ -31,6 +31,7 @@ export class CategoryPageComponent implements OnInit {
   }
 
 
+
   ngOnInit(): void {
     this.getCategories();
   }
