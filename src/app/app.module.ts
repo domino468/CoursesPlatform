@@ -14,6 +14,7 @@ import {LectureService} from "./lecture/services/lecture.service";
 import {SummaryPageComponent} from './summary-page/summary-page.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {RouterModule} from "@angular/router";
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    NgbModule
   ],
   providers: [
     HttpClient,
