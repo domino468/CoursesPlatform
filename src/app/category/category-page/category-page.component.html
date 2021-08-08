@@ -1,8 +1,8 @@
 <div class="col">
   <div class="row">
     <div *ngFor="let category of categories" class="col-4 row justify-content-around center">
-      <div class="card border-dark mb-3 max-width">
-        <div class="card-header2" [routerLink]="['/course-page/', category.title]"><h2>
+      <div class="card border-dark mb-3 max-width" [routerLink]="['/course-page/', category.title]">
+        <div class="card-header2"><h2>
           <b><i>{{category.title}}</i></b></h2></div>
         <div class="card-body text-dark">
           <p class="card-text"><i>{{category.description}}</i></p>
