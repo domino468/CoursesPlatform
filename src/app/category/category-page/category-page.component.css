@@ -17,7 +17,7 @@
   border:0.2rem solid black;
 }
 .card:hover{
-  border:dashed;
+  border:0.2rem dashed;
 }
 .card-text{
   text-align: justify;

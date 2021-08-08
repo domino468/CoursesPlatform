@@ -11,3 +11,5 @@ export class HeaderComponent {
   collapse = () => this.isMenuCollapsed = !this.isMenuCollapsed;
 
 }
+
+
