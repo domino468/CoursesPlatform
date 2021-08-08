@@ -1,21 +1,30 @@
 <div class="box">
   <div *ngFor="let lecture of lectures">
-    <div class="card border-dark mb-3 max width margin">
-      <div class="card-body text-dark">
-        <h4 class="card-title"><i>{{ lecture.title }}</i></h4>
-        <p class="card-text"><i>{{ lecture.description }}</i></p>
-        <p class="card-text"><i>Price: {{ lecture.price }}<br>Duration:</i></p>
+    <form>
+      <input (click)="handleCourseClick($event, lecture.title)" type="checkbox">
+      <div class="card border-dark mb-3 max width margin">
+        <div class="card-body text-dark">
+          <h4 class="card-title"><i>{{ lecture.title }}</i></h4>
+          <p class="card-text"><i>{{ lecture.description }}</i></p>
+          <p class="card-text"><i>Price: {{ lecture.price }}<br>Duration:</i></p>
+        </div>
       </div>
-    </div>
+    </form>
   </div>
 </div>
 <div class="emailContainer">
   <div class="emailForm">
     <label class="emailLabel" for="email">Email: </label>
     <input [formControl]="email" [placeholder]="'example@email.com'" class="emailInput" id="email" type="email">
-    <button class="btn-primary buttonHeight" type="button">Submit</button>
+    <button (click)="onSubmit(checkedLectures,email.value)"
+            [disabled]="checkedLectures.length===0 || email.errors?.pattern ||email.pristine"
+            class="btn-primary buttonHeight"
+            type="button">Submit
+    </button>
     <small *ngIf="email.touched && email.errors?.required" class="text-danger">Email is required</small>
     <small *ngIf="email.errors?.pattern" class="text-danger">Email is invalid</small>
+    <small *ngIf="areLecturesTouched && checkedLectures.length===0 &&email.dirty"
+           class="text-danger">No lectures selected</small>
   </div>
 </div>
 
