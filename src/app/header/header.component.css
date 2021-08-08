@@ -1,9 +1,14 @@
 .navbar-nav{
     color:black;
 }
-.navbar-collapse{
-    margin-left:1%;
+.logo{
+    margin-left: 1%;
 }
+.list{
+    margin-left: 2%;
+}
+
 .cursor{
 cursor: pointer;
 }
+
