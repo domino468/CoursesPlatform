@@ -1,7 +1,7 @@
 <div class="box">
   <div *ngFor="let lecture of lectures">
     <form>
-      <input (click)="handleCourseClick($event, lecture.title)" type="checkbox">
+      <input (click)="handleCourseClick($event, lecture.title)" type="checkbox" class="checkmark">
       <div class="card border-dark mb-3 max width margin">
         <div class="card-body text-dark">
           <h4 class="card-title"><i>{{ lecture.title }}</i></h4>

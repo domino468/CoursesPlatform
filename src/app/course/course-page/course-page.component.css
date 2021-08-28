@@ -15,9 +15,10 @@
   border:0.2rem solid lightgray;
   border-radius:25px;
   background-color: rgba(255, 255, 255, 0.774);
+  cursor: pointer;
 }
 .card:hover{
-  border:0.2rem dashed;
+  background-color: rgba(245, 245, 245, 0.774);
 }
 .card-text{
   text-align: justify;
