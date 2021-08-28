@@ -27,19 +27,20 @@ export class LecturePageComponent implements OnInit, OnDestroy {
               private activatedRoute: ActivatedRoute) {
   }
 
-  checkIfButtonShouldBeDisabled = (): boolean => {
-    return !!(this.checkedLectures.length === 0 || this.email.errors?.pattern || this.email.pristine);
-  }
+  checkIfButtonShouldBeDisabled = (): boolean =>
+    (this.email.pristine || this.email.invalid || this.checkedLectures.length === 0);
 
-  checkIfEmailIsRequiredErrorShouldBeDisplayed = (): boolean => {
-    return !!(this.email.touched && this.email.errors?.required);
-  }
 
-  checkIfCheckBoxErrorShouldBeDisabled = (): boolean => {
-    return this.email.valid && this.checkedLectures.length == 0;
-  }
+  checkIfEmailIsRequiredErrorShouldBeDisplayed = (): boolean =>
+    !!(this.email.touched && this.email.errors?.required);
+
+
+  checkIfCheckBoxErrorShouldBeDisabled = (): boolean =>
+    this.email.valid && this.checkedLectures.length == 0;
+
 
   handleCourseClick(event: any, name: string) {
+    // TODO check event type
     if (event.target['checked']) {
       this.checkedLectures.push(name);
     } else {
