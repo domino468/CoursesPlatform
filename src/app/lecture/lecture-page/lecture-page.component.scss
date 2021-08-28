@@ -17,7 +17,11 @@
 .card {
   border: 0.2rem solid lightgray;
   border-radius: 25px;
-  background-color: rgba(white, 0.774);
+  background-color: $cardBackground;
+}
+
+.card-content{
+  float:left;
 }
 
 .card-text {
@@ -59,10 +63,11 @@
 }
 
 .checkmark {
-  margin-top:3rem;
-  margin-right:0.5rem;
-  height: 3.5rem;
-  width: 3.5rem;
+  margin-right:1rem;
+  height: 2.5rem;
+  width: 2.5rem;
   float:left;
 }
+
+
 

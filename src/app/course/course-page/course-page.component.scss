@@ -16,11 +16,11 @@
 .card{
   border:0.2rem solid lightgray;
   border-radius:25px;
-  background-color: rgba(white, 0.774);
+  background-color: $cardBackground;
   cursor: pointer;
 }
 .card:hover{
-  background-color: rgba($backgroundOnHover, 0.774);
+  background-color: $cardBackgroundOnHover;
 }
 .card-text{
   text-align: justify;

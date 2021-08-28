@@ -15,14 +15,14 @@
 }
 
 .card{
-  background-color: rgba(white, 0.774);
+  background-color: $cardBackground;
   border-radius:25px;
   border:0.2rem solid black;
   cursor: pointer;
 }
 
 .card:hover{
-  background-color: rgba($backgroundOnHover, 0.774);
+  background-color: $cardBackgroundOnHover;
 }
 
 .card-text{
