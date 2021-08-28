@@ -12,7 +12,7 @@ let emailValidation = Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,
 @Component({
   selector: 'app-lecture-page',
   templateUrl: './lecture-page.component.html',
-  styleUrls: ['./lecture-page.component.css']
+  styleUrls: ['./lecture-page.component.scss']
 })
 export class LecturePageComponent implements OnInit, OnDestroy {
   lectures: Lecture[] = [];

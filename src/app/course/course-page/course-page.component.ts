@@ -8,7 +8,7 @@ import {switchMap, tap} from "rxjs/operators";
 @Component({
   selector: 'app-course-page',
   templateUrl: './course-page.component.html',
-  styleUrls: ['./course-page.component.css']
+  styleUrls: ['./course-page.component.scss']
 })
 export class CoursePageComponent implements OnInit, OnDestroy {
   courses: Course[] = [];

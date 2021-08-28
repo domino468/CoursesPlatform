@@ -1,3 +1,5 @@
+@import "../../../../palete.scss";
+
 .max-width {
   max-width: 18rem;
 }
@@ -11,18 +13,19 @@
   font-family:"Lucida Handwriting", monospace;
   padding-top: 7%;
 }
+
 .card{
-  border:0.2rem solid lightgray;
+  background-color: rgba(white, 0.774);
   border-radius:25px;
-  background-color: rgba(255, 255, 255, 0.774);
+  border:0.2rem solid black;
   cursor: pointer;
 }
+
 .card:hover{
-  background-color: rgba(245, 245, 245, 0.774);
+  background-color: rgba($backgroundOnHover, 0.774);
 }
+
 .card-text{
   text-align: justify;
 }
-.box{
-  margin:3% 5% 0% 5%;
-}
+
