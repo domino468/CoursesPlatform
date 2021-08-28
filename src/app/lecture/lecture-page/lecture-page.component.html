@@ -16,7 +16,7 @@
   <div class="emailForm">
     <label class="emailLabel" for="email">Email: </label>
     <input [formControl]="email" [placeholder]="'example@email.com'" class="emailInput" id="email" type="email">
-    <button (click)="onSubmit(checkedLectures,email.value)"
+    <button (click)="onSubmit(checkedLectures,email.value) "
             [disabled]="checkIfButtonShouldBeDisabled()"
             class="btn-primary buttonHeight"
             type="button">Submit
