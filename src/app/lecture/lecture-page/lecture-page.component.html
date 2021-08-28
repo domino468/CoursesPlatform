@@ -19,7 +19,6 @@
     <button (click)="onSubmit(checkedLectures,email.value) "
             [disabled]="checkIfButtonShouldBeDisabled()"
             class="btn-primary buttonHeight"
-            [routerLink]="['/summary-page/']"
             type="button">Submit
     </button>
     <small *ngIf="checkIfEmailIsRequiredErrorShouldBeDisplayed()" class="text-danger">Email is required</small>

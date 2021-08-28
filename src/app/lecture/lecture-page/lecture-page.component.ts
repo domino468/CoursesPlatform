@@ -3,7 +3,7 @@ import {LectureService} from "../services/lecture.service";
 import {Lecture} from "../models/lecture";
 import {FormControl, Validators} from "@angular/forms";
 import {switchMap, tap} from "rxjs/operators";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {Subscription} from "rxjs";
 import {SummaryService} from "../../summary-page/services/summary.service";
 
@@ -18,6 +18,7 @@ export class LecturePageComponent implements OnInit, OnDestroy {
   lectures: Lecture[] = [];
   private sub: Subscription | undefined;
   checkedLectures: string[] = [];
+  summaryPage: string = '/summary-page';
 
   email = new FormControl('', [
     Validators.required,
@@ -27,6 +28,7 @@ export class LecturePageComponent implements OnInit, OnDestroy {
   constructor(private lectureService: LectureService,
               private activatedRoute: ActivatedRoute,
               private summaryService: SummaryService,
+              private router: Router,
   ) {
   }
 
@@ -55,6 +57,7 @@ export class LecturePageComponent implements OnInit, OnDestroy {
     this.checkedLectures = checkedItems;
     this.summaryService.email = email;
     this.summaryService.lectures = checkedItems;
+    this.router.navigate([this.summaryPage])
   }
 
   ngOnInit(): void {
