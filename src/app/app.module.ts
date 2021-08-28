@@ -14,7 +14,8 @@ import {LectureService} from "./lecture/services/lecture.service";
 import {SummaryPageComponent} from './summary-page/summary-page.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {SummaryService} from "./summary-page/services/summary.service";
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CourseService,
     CategoryService,
     LectureService,
+    SummaryService
   ],
   bootstrap: [AppComponent]
 })
