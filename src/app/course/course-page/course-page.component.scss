@@ -1,3 +1,5 @@
+@import "../../../../palete.scss";
+
 .max-width {
   max-width: 18rem;
 }
@@ -14,10 +16,11 @@
 .card{
   border:0.2rem solid lightgray;
   border-radius:25px;
-  background-color: rgba(255, 255, 255, 0.774);
+  background-color: $cardBackground;
+  cursor: pointer;
 }
 .card:hover{
-  border:0.2rem dashed;
+  background-color: $cardBackgroundOnHover;
 }
 .card-text{
   text-align: justify;
