@@ -21,7 +21,6 @@
             class="btn-primary buttonHeight"
             [routerLink]="['/summary-page/']"
             type="button">Submit
-
     </button>
     <small *ngIf="checkIfEmailIsRequiredErrorShouldBeDisplayed()" class="text-danger">Email is required</small>
     <small *ngIf="email.errors?.pattern" class="text-danger">Email is invalid</small>
