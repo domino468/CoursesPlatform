@@ -17,13 +17,13 @@
     <label class="emailLabel" for="email">Email: </label>
     <input [formControl]="email" [placeholder]="'example@email.com'" class="emailInput" id="email" type="email">
     <button (click)="onSubmit(checkedLectures,email.value)"
-            [disabled]="checkedLectures.length===0 || email.errors?.pattern ||email.pristine"
+            [disabled]="checkIfButtonShouldBeDisabled()"
             class="btn-primary buttonHeight"
             type="button">Submit
     </button>
-    <small *ngIf="email.touched && email.errors?.required" class="text-danger">Email is required</small>
+    <small *ngIf="checkIfEmailIsRequiredErrorShouldBeDisplayed()" class="text-danger">Email is required</small>
     <small *ngIf="email.errors?.pattern" class="text-danger">Email is invalid</small>
-    <small *ngIf="areLecturesTouched && checkedLectures.length===0 &&email.dirty"
+    <small *ngIf="checkIfCheckBoxErrorShouldBeDisabled()"
            class="text-danger">No lectures selected</small>
   </div>
 </div>

@@ -17,7 +17,6 @@ export class LecturePageComponent implements OnInit, OnDestroy {
   lectures: Lecture[] = [];
   private sub: Subscription | undefined;
   checkedLectures: string[] = [];
-  areLecturesTouched: boolean = false;
 
   email = new FormControl('', [
     Validators.required,
@@ -28,19 +27,28 @@ export class LecturePageComponent implements OnInit, OnDestroy {
               private activatedRoute: ActivatedRoute) {
   }
 
+  checkIfButtonShouldBeDisabled = (): boolean => {
+    return !!(this.checkedLectures.length === 0 || this.email.errors?.pattern || this.email.pristine);
+  }
+
+  checkIfEmailIsRequiredErrorShouldBeDisplayed = (): boolean => {
+    return !!(this.email.touched && this.email.errors?.required);
+  }
+
+  checkIfCheckBoxErrorShouldBeDisabled = (): boolean => {
+    return this.email.valid && this.checkedLectures.length == 0;
+  }
+
   handleCourseClick(event: any, name: string) {
     if (event.target['checked']) {
       this.checkedLectures.push(name);
     } else {
       this.checkedLectures = this.checkedLectures.filter(item => item !== name);
     }
-    this.areLecturesTouched = true;
-    console.log(this.checkedLectures)
   }
 
   onSubmit(checkedItems: Array<string>, email: string) {
     this.checkedLectures = checkedItems;
-    console.log(checkedItems, email)
   }
 
   ngOnInit(): void {
