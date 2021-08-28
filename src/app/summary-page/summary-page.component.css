@@ -6,30 +6,8 @@
     background-color: rgba(255, 255, 255, 0.674);
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
-    border-radius: 50px;
+  }
 
-
-}
-.strongText{
-    size: 31,25rem;
-}
-
-
-.strongerText{
-    size: 50,25rem;
-}
-.image{
-    width: 10%;
-    
-    border-radius:50px;
-    margin-right:3%;
-}
 .content{
     text-align: left;
-}
-.smallImage{
-    width: 35%;
-    float:right;
-    border-radius:50px;
-    margin-right:3%;
 }
