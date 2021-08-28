@@ -5,6 +5,7 @@ import {FormControl, Validators} from "@angular/forms";
 import {switchMap, tap} from "rxjs/operators";
 import {ActivatedRoute} from "@angular/router";
 import {Subscription} from "rxjs";
+import {SummaryService} from "../../summary-page/services/summary.service";
 
 let emailValidation = Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
 
@@ -24,7 +25,9 @@ export class LecturePageComponent implements OnInit, OnDestroy {
   ]);
 
   constructor(private lectureService: LectureService,
-              private activatedRoute: ActivatedRoute) {
+              private activatedRoute: ActivatedRoute,
+              private summaryService: SummaryService,
+  ) {
   }
 
   checkIfButtonShouldBeDisabled = (): boolean =>
@@ -50,6 +53,8 @@ export class LecturePageComponent implements OnInit, OnDestroy {
 
   onSubmit(checkedItems: Array<string>, email: string) {
     this.checkedLectures = checkedItems;
+    this.summaryService.email = email;
+    this.summaryService.lectures = checkedItems;
   }
 
   ngOnInit(): void {
