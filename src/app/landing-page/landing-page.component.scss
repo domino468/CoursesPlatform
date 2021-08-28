@@ -1,59 +1,78 @@
 @import "../../../palete.scss";
 
-#container{
-    width:100%;
-    padding:2%;
-    color:$handsome;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+#container {
+  width: 100%;
+  padding: 2%;
+  color: black;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-shadow: 0.05em 0 white,
+  0 0.05em whitesmoke,
+  -0.05em 0 whitesmoke,
+  0 -0.05em whitesmoke,
+  -0.05em -0.05em whitesmoke,
+  -0.05em 0.05em whitesmoke,
+  0.05em -0.05em whitesmoke,
+  0.05em 0.05em whitesmoke;
 }
-#footer{
-    clear:both;
-    text-align: right;
-    margin-top:30%;
+
+#footer {
+  clear: both;
+  text-align: right;
+  margin-top: 30%;
 }
-.leftImage{
-    width: 40%;
-    float:left;
-    margin-right:3%;
+
+.leftImage {
+  width: 40%;
+  float: left;
+  margin-right: 3%;
 }
-.strongerText{
-    size: 31,25rem;
-    text-align: right;
+
+.strongerText {
+  size: 31.25rem;
+  text-align: right;
 }
-.letterContent{
-    letter-spacing: 1.5px;
-    
+
+.letterContent {
+  letter-spacing: 1.5px;
+
 }
-.imageRight{
-    width: 40%;
-    float:right;
-    border-radius:50px;
-    margin-right:3%;
+
+.imageRight {
+  width: 40%;
+  float: right;
+  border-radius: 50px;
+  margin-right: 3%;
 }
-.smallImage{
-    width: 55%;
-    float:right;
-    border-radius:50px;
-    margin-right:3%;
+
+.smallImage {
+  width: 55%;
+  float: right;
+  border-radius: 50px;
+  margin-right: 3%;
 }
-.smallerImage{
-    width: 40%;
-    float:right;
-    border-radius:50px;
-    margin-right:3%;
+
+.smallerImage {
+  width: 40%;
+  float: right;
+  border-radius: 50px;
+  margin-right: 3%;
 }
-.theSmallestImage{
-    width: 35%;
-    float:left;
-    border-radius:50px;
-    margin-right:3%;
+
+.theSmallestImage {
+  width: 35%;
+  float: left;
+  border-radius: 50px;
+  margin-right: 3%;
 }
-.content{
-    float:left;
+
+.content {
+  float: left;
 }
-.textContent{
-    text-align:center;
-    margin: 8%;
+
+.textContent {
+  text-align: center;
+  margin: 8%;
 }
 
