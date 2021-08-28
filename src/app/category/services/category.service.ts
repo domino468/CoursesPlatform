@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 import {Category} from "../models/category";
 import {environment} from "../../../environments/environment";
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class CategoryService {
   private apiServerUrl: string = environment.apiUrl;
 

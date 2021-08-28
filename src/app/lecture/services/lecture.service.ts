@@ -4,9 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Lecture} from "../models/lecture";
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class LectureService {
   private apiServerUrl: string = environment.apiUrl;
 
