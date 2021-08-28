@@ -16,12 +16,40 @@ let emailValidation = Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,
 export class LecturePageComponent implements OnInit, OnDestroy {
   lectures: Lecture[] = [];
   private sub: Subscription | undefined;
+  checkedLectures: string[] = [];
+
   email = new FormControl('', [
     Validators.required,
     emailValidation,
   ]);
 
-  constructor(private lectureService: LectureService, private activatedRoute: ActivatedRoute) {
+  constructor(private lectureService: LectureService,
+              private activatedRoute: ActivatedRoute) {
+  }
+
+  checkIfButtonShouldBeDisabled = (): boolean =>
+    (this.email.pristine || this.email.invalid || this.checkedLectures.length === 0);
+
+
+  checkIfEmailIsRequiredErrorShouldBeDisplayed = (): boolean =>
+    !!(this.email.touched && this.email.errors?.required);
+
+
+  checkIfCheckBoxErrorShouldBeDisabled = (): boolean =>
+    this.email.valid && this.checkedLectures.length == 0;
+
+
+  handleCourseClick(event: any, name: string) {
+    // TODO check event type
+    if (event.target['checked']) {
+      this.checkedLectures.push(name);
+    } else {
+      this.checkedLectures = this.checkedLectures.filter(item => item !== name);
+    }
+  }
+
+  onSubmit(checkedItems: Array<string>, email: string) {
+    this.checkedLectures = checkedItems;
   }
 
   ngOnInit(): void {
