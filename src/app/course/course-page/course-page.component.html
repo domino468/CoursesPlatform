@@ -1,10 +1,12 @@
-<div class="box">
-  <div *ngFor="let course of courses">
-    <div class="card border-dark mb-3 max width margin" [routerLink]="['/lecture-page/', course.title]">
-      <div class="card-body text-dark">
-        <h4 class="card-title">
+<div class="col">
+  <div class="row justify-content-around">
+    <div *ngFor="let course of courses" class="col-5 row justify-content-around center">
+      <div class="card border-dark mb-3 max-width margin" [routerLink]="['/lecture-page/', course.title]">
+        <div class="card-body text-dark">
+          <h4 class="card-title">
           <i>{{ course.title }}</i></h4>
-        <p class="card-text"><i>{{ course.description }}</i></p>
+          <p class="card-text"><i>{{ course.description }}</i></p>
+        </div>
       </div>
     </div>
   </div>

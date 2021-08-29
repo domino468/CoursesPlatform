@@ -1,7 +1,7 @@
 @import "../../../../palete.scss";
 
 .max-width {
-  max-width: 14rem;
+  max-width: 18rem;
 }
 .row{
   margin:0;
@@ -14,13 +14,15 @@
 .card-header2{
   text-align: center;
   font-family:"Lucida Handwriting", monospace;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-size: 4vw;
+  
 }
 
 .card{
   background-color: $cardBackground;
-  border-radius:25px;
+  border-radius:10px;
   border:0.2rem solid black;
   cursor: pointer;
 }
@@ -33,4 +35,8 @@
   text-align: justify;
 }
 
+.col{
+  margin-right: 20%;
+  margin-left: 20%;
+}
 
