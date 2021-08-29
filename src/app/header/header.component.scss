@@ -1,0 +1,30 @@
+@import "./palete";
+
+.navbar {
+  background-color: $inqooBlue;
+}
+
+.nav-link {
+  color: white;
+  text-shadow: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+}
+
+.navbar-nav {
+  color: black;
+}
+
+.logo {
+  width: 15rem;
+  margin-left: 1%;
+
+}
+
+.list {
+  margin-left: 2%;
+}
+
+.cursor {
+  cursor: pointer;
+}

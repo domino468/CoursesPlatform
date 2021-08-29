@@ -1,12 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg">
   <img src="assets/images/logo.png" class="cursor logo" [routerLink]="['/landing-page/']">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" (click)="collapse()">
+  <button (click)="collapse()" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+          class="navbar-toggler navbar-dark" data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse list" id="navbarNavDropdown" [ngbCollapse]="isMenuCollapsed">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" routerLink="category-page">Oferty</a>
+        <a class="nav-link" routerLink="category-page">Oferta</a>
       </li>
     </ul>
   </div>
