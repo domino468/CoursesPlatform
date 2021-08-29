@@ -8,9 +8,9 @@
   margin-top: 30px;
 }
 
-.card-header2{
+.card-header2 {
   text-align: center;
-  font-family:"Lucida Handwriting", monospace;
+  font-family: "Lucida Handwriting", monospace;
   padding-top: 7%;
 }
 
@@ -20,8 +20,8 @@
   background-color: $cardBackground;
 }
 
-.card-content{
-  float:left;
+.card-content {
+  float: left;
 }
 
 .card-text {
@@ -33,7 +33,6 @@
 }
 
 .emailContainer {
-  background-color: whitesmoke;
   padding: 0.2rem 0 0.2rem 0;
 }
 
@@ -63,11 +62,16 @@
 }
 
 .checkmark {
-  margin-right:1rem;
+  margin-right: 1rem;
   height: 2.5rem;
   width: 2.5rem;
-  float:left;
+  float: left;
 }
 
+.errors {
+  text-shadow: none;
+  display: flex;
+  justify-content: flex-end;
+}
 
 

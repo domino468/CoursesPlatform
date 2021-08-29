@@ -3,19 +3,19 @@
     <form>
       <div class="card border-dark mb-3 max width margin">
         <div class="card-body text-dark">
-        <input (click)="handleCourseClick($event, lecture.title)" type="checkbox" class="checkmark">
-        <div class="card-content">
-          <h4 class="card-title"><i>{{ lecture.title }}</i></h4>
-          <p class="card-text"><i>{{ lecture.description }}</i></p>
-          <p class="card-text"><i>Price: {{ lecture.price }}</i></p>
-          <p class="card-text"><i>Duration: {{ lecture.duration }}</i></p>
+          <input (click)="handleCourseClick($event, lecture.title)" class="checkmark" type="checkbox">
+          <div class="card-content">
+            <h4 class="card-title"><i>{{ lecture.title }}</i></h4>
+            <p class="card-text"><i>{{ lecture.description }}</i></p>
+            <p class="card-text"><i>Price: {{ lecture.price }}</i></p>
+            <p class="card-text"><i>Duration: {{ lecture.duration }}</i></p>
           </div>
         </div>
       </div>
     </form>
   </div>
 </div>
-<div class="emailContainer">
+<div class="emailContainer fixed-bottom">
   <div class="emailForm">
     <label class="emailLabel" for="email">Email: </label>
     <input [formControl]="email" [placeholder]="'example@email.com'" class="emailInput" id="email" type="email">
@@ -24,10 +24,12 @@
             class="btn-primary buttonHeight"
             type="button">Submit
     </button>
-    <small *ngIf="checkIfEmailIsRequiredErrorShouldBeDisplayed()" class="text-danger">Email is required</small>
-    <small *ngIf="email.errors?.pattern" class="text-danger">Email is invalid</small>
+  </div>
+  <div class="errors sticky-top">
+    <small *ngIf="checkIfEmailIsRequiredErrorShouldBeDisplayed()"
+           class="alert alert-danger" role="alert">Email is required</small>
+    <small *ngIf="email.errors?.pattern" class="alert alert-danger" role="alert">Email is invalid</small>
     <small *ngIf="checkIfCheckBoxErrorShouldBeDisabled()"
-           class="text-danger">No lectures selected</small>
+           class="alert alert-danger" role="alert">No lectures selected</small>
   </div>
 </div>
-
