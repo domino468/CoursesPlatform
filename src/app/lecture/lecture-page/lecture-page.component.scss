@@ -1,24 +1,25 @@
 @import "../../../../palete.scss";
 
-.max-width {
-  max-width: 18rem;
+.min-width {
+  min-width: 10rem;
 }
 
 .center {
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 .card-header2{
   text-align: center;
   font-family:"Lucida Handwriting", monospace;
-  padding-top: 7%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .card {
   border: 0.2rem solid lightgray;
-  border-radius: 25px;
   background-color: $cardBackground;
 }
+
 
 .card-content{
   float:left;
@@ -26,10 +27,7 @@
 
 .card-text {
   text-align: justify;
-}
-
-.box {
-  margin: 3% 5% 0 5%;
+  font-size:3vh;
 }
 
 .emailContainer {
@@ -63,10 +61,14 @@
 }
 
 .checkmark {
-  margin-right:1rem;
   height: 2.5rem;
   width: 2.5rem;
-  float:left;
+  float:right;
+}
+
+.card-title{
+  text-align: justify;
+  font-size:5vh;
 }
 
 
