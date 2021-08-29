@@ -1,36 +1,49 @@
 @import "../../../../palete.scss";
 
-.max-width {
-  max-width: 20rem;
+.min-width {
+  max-width: 50rem;
+  max-height:15rem;
+  min-height: 16vh;
+  min-width: 16vh;
 }
-.row{
+
+.row {
   margin:0;
 }
 
 .center {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
-.card-header2{
+.card-header2 {
   text-align: center;
   font-family:"Lucida Handwriting", monospace;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
-.card{
-  background-color: $cardBackground;
-  border-radius:25px;
-  border:0.2rem solid black;
+.card {
+  background-color: $inqooBlue;
   cursor: pointer;
 }
 
-.card:hover{
+.card:hover {
   background-color: $cardBackgroundOnHover;
 }
 
 .card-text{
   text-align: justify;
+  font-size:2.5vh;
+  color:whitesmoke;
+  text-shadow: none;
 }
+
+.card-title{
+  text-align: justify;
+  font-size:4vh;
+  color:whitesmoke;
+  text-shadow: none;
+}
+
 
 

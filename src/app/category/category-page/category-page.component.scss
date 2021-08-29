@@ -2,6 +2,9 @@
 
 .max-width {
   max-width: 18rem;
+  max-height: 10rem;
+  min-height: 29vh;
+  min-width: 29vh;
 }
 .row{
   margin:0;
@@ -14,16 +17,14 @@
 .card-header2{
   text-align: center;
   font-family:"Lucida Handwriting", monospace;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   font-size: 4vw;
-  
+  padding:7vh;
+  color:whitesmoke;
+  text-shadow: none;
 }
 
 .card{
-  background-color: $cardBackground;
-  border-radius:10px;
-  border:0.2rem solid black;
+  background-color: $inqooBlue;
   cursor: pointer;
 }
 
@@ -31,12 +32,9 @@
   background-color: $cardBackgroundOnHover;
 }
 
-.card-text{
-  text-align: justify;
-}
 
 .col{
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 25%;
+  margin-left: 25%;
 }
 
