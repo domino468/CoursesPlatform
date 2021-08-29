@@ -1,18 +1,16 @@
 <div id="container">
-  <h1><strong>Podsumowanie</strong></h1>
+  <h1 class="secondContentOfCenteredText"><strong>Podsumowanie</strong></h1>
   <br>
-  <div>
-    <h2>Wybrane kursy:</h2>
-    <div *ngFor="let lecture of lecturesToDisplay" class="content">
-      <h4><strong>{{lecture}}</strong></h4>
-    </div>
+    <h2><strong>  Wybrane kursy<img class="theSmallerImage" src="../assets/images/arrowka.png"></strong></h2>
+    <div  *ngFor="let lecture of lecturesToDisplay" class="basicContentOfText">
+    <h3><strong>{{lecture}}</strong></h3>
   </div>
   <br>
   <div>
-    <h3>Email został wysłany do <strong>{{emailToDisplay}}</strong></h3>
-    <h3>Serdecznie dziękujemy za zainteresowanie naszą ofertą, wkrótce się odezwiemy.</h3>
+    <h3> <img class="theSmallestImage" src="../assets/images/maillogo.png">Email został wysłany do <strong>{{emailToDisplay}}</strong></h3>
   </div>
+  <div class="firstContentOfRightedText"><h3><strong>Serdecznie dziękujemy za zainteresowanie naszą ofertą, Zespół INQOO.</strong></h3></div>
   <button [routerLink]="['/landing-page']" class="btn btn-primary" type="button">
     Powrót do strony głównej
   </button>
-</div>
+
