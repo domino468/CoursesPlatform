@@ -1,30 +1,36 @@
 @import "../../../../palete.scss";
 
 .max-width {
-  max-width: 18rem;
+  max-width: 20rem;
+}
+.row{
+  margin:0;
 }
 
 .center {
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 .card-header2{
   text-align: center;
   font-family:"Lucida Handwriting", monospace;
-  padding-top: 7%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
+
 .card{
-  border:0.2rem solid lightgray;
-  border-radius:25px;
   background-color: $cardBackground;
+  border-radius:25px;
+  border:0.2rem solid black;
   cursor: pointer;
 }
+
 .card:hover{
   background-color: $cardBackgroundOnHover;
 }
+
 .card-text{
   text-align: justify;
 }
-.box{
-  margin:3% 5% 0% 5%;
-}
+
+

@@ -1,7 +1,18 @@
 @import "~bootstrap/dist/css/bootstrap.css";
-body{
-    background-image: url('assets/images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 18px;
+  text-shadow: 0.05em 0 white,
+  0 0.05em whitesmoke,
+  -0.05em 0 whitesmoke,
+  0 -0.05em whitesmoke,
+  -0.05em -0.05em whitesmoke,
+  -0.05em 0.05em whitesmoke,
+  0.05em -0.05em whitesmoke,
+  0.05em 0.05em whitesmoke;
 }
