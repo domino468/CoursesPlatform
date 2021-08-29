@@ -1,17 +1,21 @@
 @import "../../../../palete.scss";
 
 .max-width {
-  max-width: 18rem;
+  max-width: 14rem;
+}
+.row{
+  margin:0;
 }
 
 .center {
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 .card-header2{
   text-align: center;
   font-family:"Lucida Handwriting", monospace;
-  padding-top: 7%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .card{
@@ -28,4 +32,5 @@
 .card-text{
   text-align: justify;
 }
+
 
