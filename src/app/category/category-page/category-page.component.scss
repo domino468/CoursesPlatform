@@ -2,6 +2,9 @@
 
 .max-width {
   max-width: 18rem;
+  max-height: 10rem;
+  min-height: 16vh;
+  min-width: 16vh;
 }
 .row{
   margin:0;
@@ -14,15 +17,13 @@
 .card-header2{
   text-align: center;
   font-family:"Lucida Handwriting", monospace;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   font-size: 4vw;
-  
+  padding:7vh;
 }
 
 .card{
   background-color: $cardBackground;
-  border-radius:10px;
+
   border:0.2rem solid black;
   cursor: pointer;
 }
