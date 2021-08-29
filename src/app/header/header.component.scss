@@ -5,20 +5,19 @@
 }
 
 .nav-link {
-  color: white;
+  color: $whiteSmoke;
   text-shadow: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 21px;
+  font-size: 1.25rem;
 }
 
 .navbar-nav {
-  color: black;
+  color: $black;
 }
 
 .logo {
   width: 15rem;
   margin-left: 1%;
-
 }
 
 .list {
