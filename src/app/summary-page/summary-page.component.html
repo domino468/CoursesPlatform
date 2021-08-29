@@ -1,11 +1,9 @@
 <div id="container">
   <h1 class="secondContentOfCenteredText"><strong>Podsumowanie</strong></h1>
-  <br>
-    <h2><strong>  Wybrane kursy<img class="theSmallerImage" src="../assets/images/arrowka.png"></strong></h2>
+    <h2><strong>Wybrane kursy<img class="theSmallerImage" src="../assets/images/arrowka.png"></strong></h2>
     <div  *ngFor="let lecture of lecturesToDisplay" class="basicContentOfText">
     <h3><strong>{{lecture}}</strong></h3>
   </div>
-  <br>
   <div>
     <h3> <img class="theSmallestImage" src="../assets/images/maillogo.png">Email został wysłany do <strong>{{emailToDisplay}}</strong></h3>
   </div>
@@ -13,4 +11,4 @@
   <button [routerLink]="['/landing-page']" class="btn btn-primary" type="button">
     Powrót do strony głównej
   </button>
-
+</div>
