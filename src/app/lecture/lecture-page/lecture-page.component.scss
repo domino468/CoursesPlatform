@@ -26,9 +26,8 @@
   background-color: $inqooBlue;
 }
 
-
 .card-content {
-  float:left;
+  float: left;
 }
 
 .card-text {
@@ -39,7 +38,6 @@
 }
 
 .emailContainer {
-  background-color: whitesmoke;
   padding: 0.2rem 0 0.2rem 0;
 }
 
@@ -81,5 +79,10 @@
   text-shadow: none;
 }
 
+.errors {
+  text-shadow: none;
+  display: flex;
+  justify-content: flex-end;
+}
 
 
