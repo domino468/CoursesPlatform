@@ -1,9 +1,8 @@
-#header{
-    min-height:32.1rem;
-    padding-bottom: 4rem;
-}
-#footer{
-    height: 4rem;
-    padding-top: -4rem;
-    position: relative; 
-}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 3.5rem;    /* Footer height */
+  }
