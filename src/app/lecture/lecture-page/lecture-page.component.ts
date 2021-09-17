@@ -69,7 +69,7 @@ export class LecturePageComponent implements OnInit, OnDestroy {
       mail: email,
       categoryTitle: this.offerService.categoryTitle,
       courseTitle: this.offerService.courseTitle,
-      lectureTitles: lectureTitles,
+      lecturesTitle: lectureTitles,
     })
   }
 
