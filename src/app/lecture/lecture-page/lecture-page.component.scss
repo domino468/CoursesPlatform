@@ -38,11 +38,12 @@
 }
 
 .emailContainer {
-  padding: 0.2rem 0 0.2rem 0;
+  padding: 0.2rem 0 0.6rem 0;
 }
 
 .emailForm {
   text-align: right;
+  text-shadow: none;
 }
 
 .buttonHeight {
@@ -85,4 +86,7 @@
   justify-content: flex-end;
 }
 
+hr{
+  color: white;
+}
 
