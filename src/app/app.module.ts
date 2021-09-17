@@ -16,6 +16,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {SummaryService} from "./summary-page/services/summary.service";
+import {OfferService} from "./offer/offer.service";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {SummaryService} from "./summary-page/services/summary.service";
     CourseService,
     CategoryService,
     LectureService,
-    SummaryService
+    SummaryService,
+    OfferService
   ],
   bootstrap: [AppComponent]
 })

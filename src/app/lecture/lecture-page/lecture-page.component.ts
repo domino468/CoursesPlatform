@@ -6,6 +6,7 @@ import {switchMap, tap} from "rxjs/operators";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Subscription} from "rxjs";
 import {SummaryService} from "../../summary-page/services/summary.service";
+import {OfferService} from "../../offer/offer.service";
 
 let emailValidation = Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");
 
@@ -25,10 +26,12 @@ export class LecturePageComponent implements OnInit, OnDestroy {
     emailValidation,
   ]);
 
-  constructor(private lectureService: LectureService,
-              private activatedRoute: ActivatedRoute,
-              private summaryService: SummaryService,
-              private router: Router,
+  constructor(
+    private lectureService: LectureService,
+    private activatedRoute: ActivatedRoute,
+    private summaryService: SummaryService,
+    private offerService: OfferService,
+    private router: Router,
   ) {
   }
 
@@ -57,7 +60,17 @@ export class LecturePageComponent implements OnInit, OnDestroy {
     this.checkedLectures = checkedItems;
     this.summaryService.email = email;
     this.summaryService.lectures = checkedItems;
+    this.createOffer(checkedItems, email);
     this.router.navigate([this.summaryPage])
+  }
+
+  private createOffer(lectureTitles: Array<string>, email: string) {
+    this.offerService.createOffer({
+      mail: email,
+      categoryTitle: this.offerService.categoryTitle,
+      courseTitle: this.offerService.courseTitle,
+      lectureTitles: lectureTitles,
+    })
   }
 
   ngOnInit(): void {
