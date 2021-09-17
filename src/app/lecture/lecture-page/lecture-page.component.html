@@ -16,6 +16,13 @@
   </div>
 </div>
 <div class="emailContainer fixed-bottom">
+  <div class="errors sticky-top">
+    <small *ngIf="checkIfEmailIsRequiredErrorShouldBeDisplayed()"
+           class="alert alert-danger" role="alert">Email is required</small>
+    <small *ngIf="email.errors?.pattern" class="alert alert-danger" role="alert">Email is invalid</small>
+    <small *ngIf="checkIfCheckBoxErrorShouldBeDisabled()"
+           class="alert alert-danger" role="alert">No lectures selected</small>
+  </div>
   <div class="emailForm">
     <label class="emailLabel" for="email">Email: </label>
     <input [formControl]="email" [placeholder]="'example@email.com'" class="emailInput" id="email" type="email">
@@ -24,12 +31,5 @@
             class="btn-primary buttonHeight"
             type="button">Submit
     </button>
-  </div>
-  <div class="errors sticky-top">
-    <small *ngIf="checkIfEmailIsRequiredErrorShouldBeDisplayed()"
-           class="alert alert-danger" role="alert">Email is required</small>
-    <small *ngIf="email.errors?.pattern" class="alert alert-danger" role="alert">Email is invalid</small>
-    <small *ngIf="checkIfCheckBoxErrorShouldBeDisabled()"
-           class="alert alert-danger" role="alert">No lectures selected</small>
   </div>
 </div>

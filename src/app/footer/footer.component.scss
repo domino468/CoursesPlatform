@@ -1,0 +1,14 @@
+@import "../../../palete.scss";
+.footer{
+    background-color: $inqooBlue;
+    height:4rem;
+    width:100%;
+    text-align: center;
+    color:$whiteSmoke;
+    text-shadow: none;
+}
+
+.fab{
+    padding-left: 0.25rem;
+    padding-top:0.75rem;
+}

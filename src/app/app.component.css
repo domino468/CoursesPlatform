@@ -1,0 +1,9 @@
+#header{
+    min-height:32.1rem;
+    padding-bottom: 4rem;
+}
+#footer{
+    height: 4rem;
+    padding-top: -4rem;
+    position: relative; 
+}
