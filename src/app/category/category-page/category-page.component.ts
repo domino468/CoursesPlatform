@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CategoryService} from "../services/category.service";
 import {Category} from "../models/category";
 import {HttpErrorResponse} from "@angular/common/http";
+import {OfferService} from "../../offer/offer.service";
 
 @Component({
   selector: 'app-category-page',
@@ -11,10 +12,10 @@ import {HttpErrorResponse} from "@angular/common/http";
 export class CategoryPageComponent implements OnInit {
   categories: Category[] = [];
 
-  constructor(private categoryService: CategoryService) {
+  constructor(private categoryService: CategoryService,private offerService:OfferService) {
   }
 
-  public getCategories(): void {
+  getCategories(): void {
     this.categoryService.getCategories().subscribe(
       (response: Category[]) => {
         this.categories = response;
@@ -23,6 +24,10 @@ export class CategoryPageComponent implements OnInit {
         alert(error.message)
       }
     );
+  }
+
+  getSelectedCategoryTitle(title:String){
+    this.offerService.categoryTitle=title;
   }
 
   ngOnInit(): void {

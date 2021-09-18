@@ -4,6 +4,7 @@ import {CourseService} from "../services/course.service";
 import {ActivatedRoute} from "@angular/router";
 import {Subscription} from "rxjs";
 import {switchMap, tap} from "rxjs/operators";
+import {OfferService} from "../../offer/offer.service";
 
 @Component({
   selector: 'app-course-page',
@@ -15,7 +16,7 @@ export class CoursePageComponent implements OnInit, OnDestroy {
   private sub: Subscription | undefined;
 
   constructor(
-    private courseService: CourseService, private activatedRoute: ActivatedRoute) {
+    private courseService: CourseService, private activatedRoute: ActivatedRoute, private offerService: OfferService) {
   }
 
   ngOnInit(): void {
@@ -23,6 +24,10 @@ export class CoursePageComponent implements OnInit, OnDestroy {
       switchMap(params => this.courseService.getCoursesOfCategory(params['title'])),
       tap(courses => this.courses = courses)
     ).subscribe();
+  }
+
+  getSelectedCourseTitle(title: String) {
+    this.offerService.courseTitle = title;
   }
 
   ngOnDestroy(): void {
