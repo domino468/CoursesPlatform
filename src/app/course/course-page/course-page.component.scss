@@ -2,7 +2,7 @@
 
 .min-width {
   max-width: 50rem;
-  max-height:15rem;
+  max-height:18rem;
   min-height: 16vh;
   min-width: 16vh;
 }
@@ -33,9 +33,10 @@
 
 .card-text{
   text-align: justify;
-  font-size:2.5vh;
+  font-size:3vh;
   color:$whiteSmoke;
   text-shadow: none;
+  line-height: 1.25rem;
 }
 
 .card-title{

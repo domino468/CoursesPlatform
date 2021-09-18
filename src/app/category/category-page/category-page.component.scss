@@ -1,17 +1,17 @@
 @import "../../../../palete.scss";
 
-.max-width {
-  max-width: 18rem;
-  max-height: 10rem;
-  min-height: 29vh;
-  min-width: 29vh;
+.min-width {
+  max-width: 20rem;
+  max-height:18rem;
+  min-height: 16vh;
+  min-width: 16vh;
 }
 .row{
   margin:0;
 }
 
 .center {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .card-header2{
@@ -31,10 +31,3 @@
 .card:hover{
   background-color: $cardBackgroundOnHover;
 }
-
-
-.col{
-  margin-right: 25%;
-  margin-left: 25%;
-}
-

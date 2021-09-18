@@ -1,7 +1,7 @@
 <div class="col">
   <div class="row">
     <div *ngFor="let category of categories" class="col-6 row justify-content-center center">
-      <div class="card border-dark mb-3 max-width"
+      <div class="card border-dark mb-3 min-width"
            (click)="getSelectedCategoryTitle(category.title)"
            [routerLink]="['/course-page/', category.title]">
         <div class="card-header2">
