@@ -34,16 +34,19 @@
 .card-text{
   text-align: justify;
   font-size:2.5vh;
-  color:whitesmoke;
+  color:$whiteSmoke;
   text-shadow: none;
 }
 
 .card-title{
   text-align: justify;
   font-size:4vh;
-  color:whitesmoke;
+  color:$whiteSmoke;
   text-shadow: none;
 }
 
+hr{
+  color: white;
+}
 
 

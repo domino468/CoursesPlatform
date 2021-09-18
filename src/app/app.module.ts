@@ -17,6 +17,7 @@ import {RouterModule} from "@angular/router";
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {SummaryService} from "./summary-page/services/summary.service";
 import {OfferService} from "./offer/offer.service";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {OfferService} from "./offer/offer.service";
     CoursePageComponent,
     LecturePageComponent,
     SummaryPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

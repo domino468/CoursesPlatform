@@ -33,16 +33,17 @@
 .card-text {
   text-align: justify;
   font-size:3vh;
-  color:whitesmoke;
+  color:$whiteSmoke;
   text-shadow: none;
 }
 
 .emailContainer {
-  padding: 0.2rem 0 0.2rem 0;
+  padding: 0.2rem 0 0.6rem 0;
 }
 
 .emailForm {
   text-align: right;
+  text-shadow: none;
 }
 
 .buttonHeight {
@@ -75,7 +76,7 @@
 .card-title{
   text-align: justify;
   font-size:5vh;
-  color:whitesmoke;
+  color:$whiteSmoke;
   text-shadow: none;
 }
 
@@ -85,4 +86,7 @@
   justify-content: flex-end;
 }
 
+hr{
+  color: white;
+}
 
