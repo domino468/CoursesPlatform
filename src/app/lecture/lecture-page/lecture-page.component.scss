@@ -2,8 +2,8 @@
 
 .min-width {
   max-width: 50rem;
-  max-height:18rem;
-  min-height: 16vh;
+  max-height:30rem;
+  min-height: 20rem;
   min-width: 16vh;
 }
 
@@ -16,7 +16,6 @@
 }
 
 .card-header2 {
-  text-align: center;
   font-family:"Lucida Handwriting", monospace;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -30,8 +29,18 @@
   float: left;
 }
 
+.card-description{
+  text-align: justify;
+  font-size:3vh;
+  color:$whiteSmoke;
+  text-shadow: none;
+  line-height: 1.25rem;
+}
+
 .card-text {
   text-align: justify;
+  position: absolute;
+  bottom: 0.5rem;
   font-size:3vh;
   color:$whiteSmoke;
   text-shadow: none;
@@ -71,14 +80,14 @@
 .checkmark {
   height: 2.5rem;
   width: 2.5rem;
-  float:right;
+  float: right;
 }
 
 .card-title{
-  text-align: justify;
   font-size:5vh;
   color:$whiteSmoke;
   text-shadow: none;
+
 }
 
 .errors {
