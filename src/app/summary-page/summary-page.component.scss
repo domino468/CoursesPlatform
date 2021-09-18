@@ -1,12 +1,13 @@
+@import "../../../palete.scss";
+
 #container{
     width:100%;
-    padding:5%;
-    min-height:32.6rem;
+    padding:0%;
     color: rgb(60,60,60);
     background-color: rgba(255, 255, 255, 0.674);
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    
+    font-family: 'Times New Roman', Times, serif;  
+    margin-top: 0rem;
   }
 
 .basicContentOfText{
@@ -14,7 +15,7 @@
 }
 .firstContentOfRightedText{
   text-align:right;
-  margin: 8rem;
+ 
 }
 .secondContentOfCenteredText{
   text-align: center;
@@ -27,8 +28,18 @@
 }
 .theSmallerImage{
   width: 5%;
-  padding-top: 5%;
+  
   align-items: flex-end;
   border-radius: 50px;
   margin-right: 3%;
+}
+.theSmallImage{
+  width: 30%;
+}
+
+.alignCenter{
+  text-align: center;
+}
+.btn{
+background-color: $inqooBlue;
 }

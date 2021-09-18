@@ -5,7 +5,7 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'app-summary-page',
   templateUrl: './summary-page.component.html',
-  styleUrls: ['./summary-page.component.css']
+  styleUrls: ['./summary-page.component.scss']
 })
 export class SummaryPageComponent implements OnInit {
   lecturesToDisplay: String[] = [];
